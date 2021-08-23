@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-45deg, #345, #123);
+    background: linear-gradient(-45deg, #369, #036);
 }
 
 .board {
@@ -24,14 +24,14 @@ body {
 
 
 .board div {
-    border: 3px solid #888;
+    border: 2px solid #8888;
     border-radius: 100%;
     margin: 15%;
 }
 
 .owner_none:hover {
     cursor: pointer;
-    border: 3px solid white;
+    border: 2px solid white;
 }
 
 .owner_white {
@@ -40,4 +40,12 @@ body {
 
 .owner_black {
     background: black;
+}
+
+.owner_black.winner_yes {
+    border: 2px solid rgb(255, 166, 0) !important;
+}
+
+.owner_white.winner_yes {
+    border: 2px solid rgb(128, 0, 53) !important;
 }
