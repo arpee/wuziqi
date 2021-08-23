@@ -1,12 +1,27 @@
 body {
-    background-color: #123;
+    background: linear-gradient(-45deg, #345, #123);
 }
 
 .board {
     display: grid;
-    width: 900px;
-    height: 900px;
+    margin: 10vh auto;
+    border: 1px solid orangered;
 }
+
+@media (orientation: landscape) {
+    .board {
+        width: 80vh;
+        height: 80vh;
+    }
+}
+
+@media (orientation: portrait) {
+    .board {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
 
 .board div {
     border: 3px solid #888;
@@ -14,3 +29,15 @@ body {
     margin: 15%;
 }
 
+.owner_none:hover {
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.owner_white {
+    background: white;
+}
+
+.owner_black {
+    background: black;
+}
